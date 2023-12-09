@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		618178032B23EA700047E41A /* ArgosPPTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618178022B23EA700047E41A /* ArgosPPTApp.swift */; };
+		618178052B23EA700047E41A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618178042B23EA700047E41A /* ContentView.swift */; };
+		618178072B23EA710047E41A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 618178062B23EA710047E41A /* Assets.xcassets */; };
+		6181780A2B23EA710047E41A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 618178092B23EA710047E41A /* Preview Assets.xcassets */; };
+		618178142B23EA710047E41A /* ArgosPPTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618178132B23EA710047E41A /* ArgosPPTTests.swift */; };
+		6181781E2B23EA710047E41A /* ArgosPPTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6181781D2B23EA710047E41A /* ArgosPPTUITests.swift */; };
+		618178202B23EA710047E41A /* ArgosPPTUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6181781F2B23EA710047E41A /* ArgosPPTUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		618178102B23EA710047E41A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 618177F72B23EA700047E41A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 618177FE2B23EA700047E41A;
+			remoteInfo = ArgosPPT;
+		};
+		6181781A2B23EA710047E41A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 618177F72B23EA700047E41A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 618177FE2B23EA700047E41A;
+			remoteInfo = ArgosPPT;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		618177FF2B23EA700047E41A /* ArgosPPT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArgosPPT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		618178022B23EA700047E41A /* ArgosPPTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgosPPTApp.swift; sourceTree = "<group>"; };
+		618178042B23EA700047E41A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		618178062B23EA710047E41A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		618178092B23EA710047E41A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6181780F2B23EA710047E41A /* ArgosPPTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArgosPPTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		618178132B23EA710047E41A /* ArgosPPTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgosPPTTests.swift; sourceTree = "<group>"; };
+		618178192B23EA710047E41A /* ArgosPPTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArgosPPTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6181781D2B23EA710047E41A /* ArgosPPTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgosPPTUITests.swift; sourceTree = "<group>"; };
+		6181781F2B23EA710047E41A /* ArgosPPTUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgosPPTUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		618177FC2B23EA700047E41A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6181780C2B23EA710047E41A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		618178162B23EA710047E41A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		618177F62B23EA700047E41A = {
+			isa = PBXGroup;
+			children = (
+				618178012B23EA700047E41A /* ArgosPPT */,
+				618178122B23EA710047E41A /* ArgosPPTTests */,
+				6181781C2B23EA710047E41A /* ArgosPPTUITests */,
+				618178002B23EA700047E41A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		618178002B23EA700047E41A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				618177FF2B23EA700047E41A /* ArgosPPT.app */,
+				6181780F2B23EA710047E41A /* ArgosPPTTests.xctest */,
+				618178192B23EA710047E41A /* ArgosPPTUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		618178012B23EA700047E41A /* ArgosPPT */ = {
+			isa = PBXGroup;
+			children = (
+				618178022B23EA700047E41A /* ArgosPPTApp.swift */,
+				618178042B23EA700047E41A /* ContentView.swift */,
+				618178062B23EA710047E41A /* Assets.xcassets */,
+				618178082B23EA710047E41A /* Preview Content */,
+			);
+			path = ArgosPPT;
+			sourceTree = "<group>";
+		};
+		618178082B23EA710047E41A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				618178092B23EA710047E41A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		618178122B23EA710047E41A /* ArgosPPTTests */ = {
+			isa = PBXGroup;
+			children = (
+				618178132B23EA710047E41A /* ArgosPPTTests.swift */,
+			);
+			path = ArgosPPTTests;
+			sourceTree = "<group>";
+		};
+		6181781C2B23EA710047E41A /* ArgosPPTUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6181781D2B23EA710047E41A /* ArgosPPTUITests.swift */,
+				6181781F2B23EA710047E41A /* ArgosPPTUITestsLaunchTests.swift */,
+			);
+			path = ArgosPPTUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		618177FE2B23EA700047E41A /* ArgosPPT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 618178232B23EA710047E41A /* Build configuration list for PBXNativeTarget "ArgosPPT" */;
+			buildPhases = (
+				618177FB2B23EA700047E41A /* Sources */,
+				618177FC2B23EA700047E41A /* Frameworks */,
+				618177FD2B23EA700047E41A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArgosPPT;
+			productName = ArgosPPT;
+			productReference = 618177FF2B23EA700047E41A /* ArgosPPT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6181780E2B23EA710047E41A /* ArgosPPTTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 618178262B23EA710047E41A /* Build configuration list for PBXNativeTarget "ArgosPPTTests" */;
+			buildPhases = (
+				6181780B2B23EA710047E41A /* Sources */,
+				6181780C2B23EA710047E41A /* Frameworks */,
+				6181780D2B23EA710047E41A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				618178112B23EA710047E41A /* PBXTargetDependency */,
+			);
+			name = ArgosPPTTests;
+			productName = ArgosPPTTests;
+			productReference = 6181780F2B23EA710047E41A /* ArgosPPTTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		618178182B23EA710047E41A /* ArgosPPTUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 618178292B23EA710047E41A /* Build configuration list for PBXNativeTarget "ArgosPPTUITests" */;
+			buildPhases = (
+				618178152B23EA710047E41A /* Sources */,
+				618178162B23EA710047E41A /* Frameworks */,
+				618178172B23EA710047E41A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6181781B2B23EA710047E41A /* PBXTargetDependency */,
+			);
+			name = ArgosPPTUITests;
+			productName = ArgosPPTUITests;
+			productReference = 618178192B23EA710047E41A /* ArgosPPTUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		618177F72B23EA700047E41A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					618177FE2B23EA700047E41A = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					6181780E2B23EA710047E41A = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 618177FE2B23EA700047E41A;
+					};
+					618178182B23EA710047E41A = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 618177FE2B23EA700047E41A;
+					};
+				};
+			};
+			buildConfigurationList = 618177FA2B23EA700047E41A /* Build configuration list for PBXProject "ArgosPPT" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 618177F62B23EA700047E41A;
+			productRefGroup = 618178002B23EA700047E41A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				618177FE2B23EA700047E41A /* ArgosPPT */,
+				6181780E2B23EA710047E41A /* ArgosPPTTests */,
+				618178182B23EA710047E41A /* ArgosPPTUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		618177FD2B23EA700047E41A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6181780A2B23EA710047E41A /* Preview Assets.xcassets in Resources */,
+				618178072B23EA710047E41A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6181780D2B23EA710047E41A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		618178172B23EA710047E41A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		618177FB2B23EA700047E41A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				618178052B23EA700047E41A /* ContentView.swift in Sources */,
+				618178032B23EA700047E41A /* ArgosPPTApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6181780B2B23EA710047E41A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				618178142B23EA710047E41A /* ArgosPPTTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		618178152B23EA710047E41A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				618178202B23EA710047E41A /* ArgosPPTUITestsLaunchTests.swift in Sources */,
+				6181781E2B23EA710047E41A /* ArgosPPTUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		618178112B23EA710047E41A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 618177FE2B23EA700047E41A /* ArgosPPT */;
+			targetProxy = 618178102B23EA710047E41A /* PBXContainerItemProxy */;
+		};
+		6181781B2B23EA710047E41A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 618177FE2B23EA700047E41A /* ArgosPPT */;
+			targetProxy = 6181781A2B23EA710047E41A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		618178212B23EA710047E41A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		618178222B23EA710047E41A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		618178242B23EA710047E41A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ArgosPPT/Preview Content\"";
+				DEVELOPMENT_TEAM = AKX9H369BG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.argos.ArgosPPT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		618178252B23EA710047E41A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ArgosPPT/Preview Content\"";
+				DEVELOPMENT_TEAM = AKX9H369BG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.argos.ArgosPPT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		618178272B23EA710047E41A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AKX9H369BG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.argos.ArgosPPTTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArgosPPT.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ArgosPPT";
+			};
+			name = Debug;
+		};
+		618178282B23EA710047E41A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AKX9H369BG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.argos.ArgosPPTTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArgosPPT.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ArgosPPT";
+			};
+			name = Release;
+		};
+		6181782A2B23EA710047E41A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AKX9H369BG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.argos.ArgosPPTUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ArgosPPT;
+			};
+			name = Debug;
+		};
+		6181782B2B23EA710047E41A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AKX9H369BG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.argos.ArgosPPTUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ArgosPPT;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		618177FA2B23EA700047E41A /* Build configuration list for PBXProject "ArgosPPT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				618178212B23EA710047E41A /* Debug */,
+				618178222B23EA710047E41A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		618178232B23EA710047E41A /* Build configuration list for PBXNativeTarget "ArgosPPT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				618178242B23EA710047E41A /* Debug */,
+				618178252B23EA710047E41A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		618178262B23EA710047E41A /* Build configuration list for PBXNativeTarget "ArgosPPTTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				618178272B23EA710047E41A /* Debug */,
+				618178282B23EA710047E41A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		618178292B23EA710047E41A /* Build configuration list for PBXNativeTarget "ArgosPPTUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6181782A2B23EA710047E41A /* Debug */,
+				6181782B2B23EA710047E41A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 618177F72B23EA700047E41A /* Project object */;
+}
