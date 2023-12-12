@@ -43,17 +43,34 @@ struct ProductDetailsView: View {
                         }
                         .padding(.vertical)
                         
-                        HStack(spacing: 10){
-                            ForEach(0..<5){index in
-                                Image(systemName: "star.fill")
-                                    .resizable()
-                                    .frame(width: 20, height: 20)
-                                    .foregroundColor(.yellow)
+                        HStack {
+                            HStack(spacing: 10){
+                                ForEach(0..<5){index in
+                                    Image(systemName: "star.fill")
+                                        .resizable()
+                                        .frame(width: 20, height: 20)
+                                        .foregroundColor(.yellow)
+                                }
+                                Text("4.5")
+                                    .foregroundColor(.gray)
                             }
-                            Text("4.5")
-                                .foregroundColor(.gray)
+                            .padding(.vertical)
+                            
+                            Spacer()
+                            
+                            HStack{
+                                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                                    Image(systemName: "minus.square")
+                                })
+                                
+                                Text("1")
+                                
+                                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                                    Image(systemName: "plus.square.fill")
+                                        .foregroundColor(Color("kPrimary"))
+                                })
+                            }
                         }
-                        .padding(.vertical)
                         
                         Text("Description")
                             .font(.title3)
@@ -80,19 +97,18 @@ struct ProductDetailsView: View {
                             
                             Spacer()
                             
-                            VStack(alignment: .leading){
+                            VStack(alignment: .trailing){
                                 Text("Colors")
                                     .font(.system(size: 18))
                                     .fontWeight(.semibold)
                                 
-                                Text("Blue")
-                                    .foregroundColor(.blue)
-                                Text("Black")
-                                    .foregroundColor(.black)
-                                Text("Off-white")
-                                    .foregroundColor(.gray)
+                                HStack{
+                                    ColorDotView(color: .blue)
+                                    ColorDotView(color: .black)
+                                    ColorDotView(color: .gray)
+                                }
                             }
-                            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+                            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .trailing)
                         }
                         .padding(.vertical)
                         
@@ -112,4 +128,13 @@ struct ProductDetailsView: View {
 
 #Preview {
     ProductDetailsView(product: productList[1])
+}
+
+struct ColorDotView: View{
+    let color: Color
+    var body: some View{
+        color
+            .frame(width: 25, height: 25)
+            .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+    }
 }
