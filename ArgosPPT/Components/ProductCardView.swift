@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ProductCardView: View {
-    @EnvironmentObject var cartManager: CartManager
+    @ObservedObject var cartManager: CartManager
     var product: Product
     var body: some View {
         ZStack{
@@ -54,6 +54,5 @@ struct ProductCardView: View {
 }
 
 #Preview {
-    ProductCardView(product: productList[0])
-        .environmentObject(CartManager())
+    ProductCardView(cartManager: CartManager(), product: productList[0])
 }

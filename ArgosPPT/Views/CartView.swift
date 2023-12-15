@@ -8,12 +8,17 @@
 import SwiftUI
 
 struct CartView: View {
-    @EnvironmentObject var cartManager: CartManager
+    @ObservedObject var cartManager: CartManager
+    
+    init(cartManager: CartManager) {
+            self.cartManager = cartManager
+        }
+    
     var body: some View {
         ScrollView{
             if cartManager.products.count > 0 {
                 ForEach(cartManager.products, id: \.id){product in
-                    CartProductView(product: product)
+                    CartProductView(cartManager: cartManager, product: product)
                 }
                 HStack{
                     Text("Your Total is")
@@ -34,7 +39,9 @@ struct CartView: View {
     }
 }
 
-#Preview {
-    CartView()
-        .environmentObject(CartManager())
+struct CartView_Previews: PreviewProvider {
+    static var previews: some View {
+        let cartManager = CartManager()
+        CartView(cartManager: cartManager)
+    }
 }

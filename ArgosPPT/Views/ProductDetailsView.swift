@@ -113,7 +113,7 @@ struct ProductDetailsView: View {
                         .padding(.vertical)
                         
                         PaymentButton(action: {})
-                            .frame(width: .infinity, height: 35)
+                            .frame(width: nil, height: 35)
                     }
                     .padding()
                     .background(.white)

@@ -1,0 +1,907 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		7C733A13669EC5B726DC417327938198 /* CaptureSDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 09ED043FB1238452EB32E4CAA6B96888 /* Build configuration list for PBXAggregateTarget "CaptureSDK" */;
+			buildPhases = (
+				62C3CDFE7CAE2C19B672D7E12E760DE0 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = CaptureSDK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		07A6BC5D1CA7D9ABB225FEFB3BE267A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		08CC2BD0E58709A969BF2C0B36FA1A9B /* Pods-ArgosPPT-ArgosPPTUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8086DD5C379FE67B351DC3941B91D7AD /* Pods-ArgosPPT-ArgosPPTUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0DFF6CA6AFECF0A6909F4F4F44DB888F /* Pods-ArgosPPT-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BEC3FCA0CA5D2DFA462068F34687695 /* Pods-ArgosPPT-dummy.m */; };
+		1E9E180D4DFADA71558810D2E793A490 /* Pods-ArgosPPTTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 39CEE2B87A10B3EB31385A29167D03A0 /* Pods-ArgosPPTTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		201021BD0019C1C4B935C52721A46CEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		59AE9911452260700ECCAF293116D33F /* Pods-ArgosPPTTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6FB35EF0C115ECB049917C2FD4230C /* Pods-ArgosPPTTests-dummy.m */; };
+		7080B2E22F888438A0E6111909D320A7 /* Pods-ArgosPPT-ArgosPPTUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF1977133571ADB6E2149B510FA9F60 /* Pods-ArgosPPT-ArgosPPTUITests-dummy.m */; };
+		BBE8A4754321C5855F70855E6A32FDC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		DDE48A0C832723C42F008AC12C6F209C /* Pods-ArgosPPT-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 19E6C42A36C4C7219A02455E2E9C3B15 /* Pods-ArgosPPT-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5FD6E6E00323267B9657536DCBDA4D9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C733A13669EC5B726DC417327938198;
+			remoteInfo = CaptureSDK;
+		};
+		75FAE6077ABD7F9A9A0690CD714BFC64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C733A13669EC5B726DC417327938198;
+			remoteInfo = CaptureSDK;
+		};
+		A31662DB967A699F773BB7CFB994EB02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD5EDA541B0FCE6CF64A55832074C86C;
+			remoteInfo = "Pods-ArgosPPT";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05E516356D27561420EB56E3842096CF /* Pods-ArgosPPT.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ArgosPPT.modulemap"; sourceTree = "<group>"; };
+		114231AA4D5D79A5821BB0A4EA86CB57 /* Pods-ArgosPPT-ArgosPPTUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ArgosPPT-ArgosPPTUITests-Info.plist"; sourceTree = "<group>"; };
+		19E6C42A36C4C7219A02455E2E9C3B15 /* Pods-ArgosPPT-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ArgosPPT-umbrella.h"; sourceTree = "<group>"; };
+		1F2B9487D219D7D5FBE3F3F522C05D8B /* Pods-ArgosPPTTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ArgosPPTTests"; path = Pods_ArgosPPTTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20EB2429B831139F04EA2D3B55F53D2C /* Pods-ArgosPPT-ArgosPPTUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ArgosPPT-ArgosPPTUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		226623F306303511DA82BFED6503A9BB /* Pods-ArgosPPT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ArgosPPT.release.xcconfig"; sourceTree = "<group>"; };
+		2D079E3CAC6ADA53B76E7E74FF3530F8 /* Pods-ArgosPPTTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ArgosPPTTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2F83BC5B78713D2BC96B2DB29C3B1589 /* Pods-ArgosPPT-ArgosPPTUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ArgosPPT-ArgosPPTUITests.modulemap"; sourceTree = "<group>"; };
+		37BF97D0F7403A00D83EC56806693538 /* Pods-ArgosPPT-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ArgosPPT-acknowledgements.plist"; sourceTree = "<group>"; };
+		39CEE2B87A10B3EB31385A29167D03A0 /* Pods-ArgosPPTTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ArgosPPTTests-umbrella.h"; sourceTree = "<group>"; };
+		43CCDB81A1A280824C94F0F72C7BCC29 /* Pods-ArgosPPTTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ArgosPPTTests.debug.xcconfig"; sourceTree = "<group>"; };
+		44AD1FA1E8D57C02F41EC902F656B62B /* Pods-ArgosPPT-ArgosPPTUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ArgosPPT-ArgosPPTUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		477D79A6333A9EC84277A9E504511F2A /* CaptureSDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "CaptureSDK-xcframeworks.sh"; sourceTree = "<group>"; };
+		65111459516DA96048AA1793F7AE4EEE /* CaptureSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CaptureSDK.release.xcconfig; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		745E7F865B0E1F8B9A39D83901D35F49 /* Pods-ArgosPPT-ArgosPPTUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ArgosPPT-ArgosPPTUITests-frameworks.sh"; sourceTree = "<group>"; };
+		7847DD62A46C2A1B76CC5366B3787361 /* Pods-ArgosPPT-ArgosPPTUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ArgosPPT-ArgosPPTUITests"; path = Pods_ArgosPPT_ArgosPPTUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B6FB35EF0C115ECB049917C2FD4230C /* Pods-ArgosPPTTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ArgosPPTTests-dummy.m"; sourceTree = "<group>"; };
+		8086DD5C379FE67B351DC3941B91D7AD /* Pods-ArgosPPT-ArgosPPTUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ArgosPPT-ArgosPPTUITests-umbrella.h"; sourceTree = "<group>"; };
+		8D36F32DF9842E3B68C91B5ED1C8CE68 /* Pods-ArgosPPTTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ArgosPPTTests.modulemap"; sourceTree = "<group>"; };
+		92A1240C6D657CE715E97B96EFE6A6D4 /* Pods-ArgosPPT-ArgosPPTUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ArgosPPT-ArgosPPTUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9BEC3FCA0CA5D2DFA462068F34687695 /* Pods-ArgosPPT-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ArgosPPT-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1D1435A7413BFD9423CBAD7ACC8FC82 /* Pods-ArgosPPTTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ArgosPPTTests.release.xcconfig"; sourceTree = "<group>"; };
+		A84C0C990503DE2E36548125C2F75EC3 /* Pods-ArgosPPT */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ArgosPPT"; path = Pods_ArgosPPT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFF1977133571ADB6E2149B510FA9F60 /* Pods-ArgosPPT-ArgosPPTUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ArgosPPT-ArgosPPTUITests-dummy.m"; sourceTree = "<group>"; };
+		C2511B4F4D54F5DD1390E77E2F254841 /* Pods-ArgosPPT-ArgosPPTUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ArgosPPT-ArgosPPTUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D5B8A3F1381446665D55A502689A3050 /* Pods-ArgosPPT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ArgosPPT.debug.xcconfig"; sourceTree = "<group>"; };
+		D69AE872ABAC3FF03BDFA098CF4C48FD /* Pods-ArgosPPT-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ArgosPPT-frameworks.sh"; sourceTree = "<group>"; };
+		E091265BF84AEA2433511EBE135BEDF7 /* CaptureSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CaptureSDK.debug.xcconfig; sourceTree = "<group>"; };
+		E894C1E124DD8C296BD668827751F3A3 /* CaptureSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = CaptureSDK.xcframework; path = lib/CaptureSDK.xcframework; sourceTree = "<group>"; };
+		ECEE2F805A1ED48609F1AAAAD4D7C0D0 /* Pods-ArgosPPT-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ArgosPPT-Info.plist"; sourceTree = "<group>"; };
+		EE1ED8452C5D5F4077826BC78B527DEE /* Pods-ArgosPPTTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ArgosPPTTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EE8A5AF8CCA3D8CD34E6D907B3AD1A93 /* Pods-ArgosPPT-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ArgosPPT-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FF97993D4CC653AF215154479D95E8C0 /* Pods-ArgosPPTTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ArgosPPTTests-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0CD1A336AEE167490CD8A7CB6B1EF7B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				201021BD0019C1C4B935C52721A46CEC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		734E25347AD51070189AF66266379606 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBE8A4754321C5855F70855E6A32FDC4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5A9E3B97171F67973B9AD03B2C2A832 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07A6BC5D1CA7D9ABB225FEFB3BE267A5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E39D24829018A7CF2D81D396B28A450 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B834703E3963CA9648BCD3A5C92725D8 /* Pods-ArgosPPT */,
+				56DA76B1162FE92D360156A23CC20561 /* Pods-ArgosPPT-ArgosPPTUITests */,
+				A8AE3613A0D589E0E940AA42ED24BB59 /* Pods-ArgosPPTTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3C231F3420F828A724C88C904E26081C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E894C1E124DD8C296BD668827751F3A3 /* CaptureSDK.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		40BAE5F91D9B6781E39F1FE71393ECD5 /* CaptureSDK */ = {
+			isa = PBXGroup;
+			children = (
+				3C231F3420F828A724C88C904E26081C /* Frameworks */,
+				415D3704814CBE93866690E199A17D68 /* Support Files */,
+			);
+			name = CaptureSDK;
+			path = CaptureSDK;
+			sourceTree = "<group>";
+		};
+		415D3704814CBE93866690E199A17D68 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				477D79A6333A9EC84277A9E504511F2A /* CaptureSDK-xcframeworks.sh */,
+				E091265BF84AEA2433511EBE135BEDF7 /* CaptureSDK.debug.xcconfig */,
+				65111459516DA96048AA1793F7AE4EEE /* CaptureSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CaptureSDK";
+			sourceTree = "<group>";
+		};
+		56DA76B1162FE92D360156A23CC20561 /* Pods-ArgosPPT-ArgosPPTUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2F83BC5B78713D2BC96B2DB29C3B1589 /* Pods-ArgosPPT-ArgosPPTUITests.modulemap */,
+				44AD1FA1E8D57C02F41EC902F656B62B /* Pods-ArgosPPT-ArgosPPTUITests-acknowledgements.markdown */,
+				20EB2429B831139F04EA2D3B55F53D2C /* Pods-ArgosPPT-ArgosPPTUITests-acknowledgements.plist */,
+				BFF1977133571ADB6E2149B510FA9F60 /* Pods-ArgosPPT-ArgosPPTUITests-dummy.m */,
+				745E7F865B0E1F8B9A39D83901D35F49 /* Pods-ArgosPPT-ArgosPPTUITests-frameworks.sh */,
+				114231AA4D5D79A5821BB0A4EA86CB57 /* Pods-ArgosPPT-ArgosPPTUITests-Info.plist */,
+				8086DD5C379FE67B351DC3941B91D7AD /* Pods-ArgosPPT-ArgosPPTUITests-umbrella.h */,
+				92A1240C6D657CE715E97B96EFE6A6D4 /* Pods-ArgosPPT-ArgosPPTUITests.debug.xcconfig */,
+				C2511B4F4D54F5DD1390E77E2F254841 /* Pods-ArgosPPT-ArgosPPTUITests.release.xcconfig */,
+			);
+			name = "Pods-ArgosPPT-ArgosPPTUITests";
+			path = "Target Support Files/Pods-ArgosPPT-ArgosPPTUITests";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		A8AE3613A0D589E0E940AA42ED24BB59 /* Pods-ArgosPPTTests */ = {
+			isa = PBXGroup;
+			children = (
+				8D36F32DF9842E3B68C91B5ED1C8CE68 /* Pods-ArgosPPTTests.modulemap */,
+				EE1ED8452C5D5F4077826BC78B527DEE /* Pods-ArgosPPTTests-acknowledgements.markdown */,
+				2D079E3CAC6ADA53B76E7E74FF3530F8 /* Pods-ArgosPPTTests-acknowledgements.plist */,
+				7B6FB35EF0C115ECB049917C2FD4230C /* Pods-ArgosPPTTests-dummy.m */,
+				FF97993D4CC653AF215154479D95E8C0 /* Pods-ArgosPPTTests-Info.plist */,
+				39CEE2B87A10B3EB31385A29167D03A0 /* Pods-ArgosPPTTests-umbrella.h */,
+				43CCDB81A1A280824C94F0F72C7BCC29 /* Pods-ArgosPPTTests.debug.xcconfig */,
+				A1D1435A7413BFD9423CBAD7ACC8FC82 /* Pods-ArgosPPTTests.release.xcconfig */,
+			);
+			name = "Pods-ArgosPPTTests";
+			path = "Target Support Files/Pods-ArgosPPTTests";
+			sourceTree = "<group>";
+		};
+		B834703E3963CA9648BCD3A5C92725D8 /* Pods-ArgosPPT */ = {
+			isa = PBXGroup;
+			children = (
+				05E516356D27561420EB56E3842096CF /* Pods-ArgosPPT.modulemap */,
+				EE8A5AF8CCA3D8CD34E6D907B3AD1A93 /* Pods-ArgosPPT-acknowledgements.markdown */,
+				37BF97D0F7403A00D83EC56806693538 /* Pods-ArgosPPT-acknowledgements.plist */,
+				9BEC3FCA0CA5D2DFA462068F34687695 /* Pods-ArgosPPT-dummy.m */,
+				D69AE872ABAC3FF03BDFA098CF4C48FD /* Pods-ArgosPPT-frameworks.sh */,
+				ECEE2F805A1ED48609F1AAAAD4D7C0D0 /* Pods-ArgosPPT-Info.plist */,
+				19E6C42A36C4C7219A02455E2E9C3B15 /* Pods-ArgosPPT-umbrella.h */,
+				D5B8A3F1381446665D55A502689A3050 /* Pods-ArgosPPT.debug.xcconfig */,
+				226623F306303511DA82BFED6503A9BB /* Pods-ArgosPPT.release.xcconfig */,
+			);
+			name = "Pods-ArgosPPT";
+			path = "Target Support Files/Pods-ArgosPPT";
+			sourceTree = "<group>";
+		};
+		B91699EA0EBDC4D0C31951214BD68487 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40BAE5F91D9B6781E39F1FE71393ECD5 /* CaptureSDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				B91699EA0EBDC4D0C31951214BD68487 /* Pods */,
+				F7ED3E2C6E6C5E276F1C186BB50746A0 /* Products */,
+				0E39D24829018A7CF2D81D396B28A450 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7ED3E2C6E6C5E276F1C186BB50746A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A84C0C990503DE2E36548125C2F75EC3 /* Pods-ArgosPPT */,
+				7847DD62A46C2A1B76CC5366B3787361 /* Pods-ArgosPPT-ArgosPPTUITests */,
+				1F2B9487D219D7D5FBE3F3F522C05D8B /* Pods-ArgosPPTTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7A674F7C9C2FEF0BEF7D0363BF94E4F2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDE48A0C832723C42F008AC12C6F209C /* Pods-ArgosPPT-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2E8120BF0AC73AC4C21FC0EEDAFD722 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08CC2BD0E58709A969BF2C0B36FA1A9B /* Pods-ArgosPPT-ArgosPPTUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB5C024FAC0A3C68AB4FA117181AE288 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E9E180D4DFADA71558810D2E793A490 /* Pods-ArgosPPTTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7B1FA47A2A60A1ABB26A1297FBEBA914 /* Pods-ArgosPPT-ArgosPPTUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 477119440FACEFFB3C6AEB484872A871 /* Build configuration list for PBXNativeTarget "Pods-ArgosPPT-ArgosPPTUITests" */;
+			buildPhases = (
+				B2E8120BF0AC73AC4C21FC0EEDAFD722 /* Headers */,
+				FCD6CCEE72AC9F1AFE4DB2C4818DFC23 /* Sources */,
+				734E25347AD51070189AF66266379606 /* Frameworks */,
+				0753AC00F6B68D1E100A793106B35755 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C73A01287EC95D6BF19F00DCD399F567 /* PBXTargetDependency */,
+			);
+			name = "Pods-ArgosPPT-ArgosPPTUITests";
+			productName = Pods_ArgosPPT_ArgosPPTUITests;
+			productReference = 7847DD62A46C2A1B76CC5366B3787361 /* Pods-ArgosPPT-ArgosPPTUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		7D059B9E56917AA1FD908234AD6BC415 /* Pods-ArgosPPTTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CADCBC132DD8D0E951DABDA02056F791 /* Build configuration list for PBXNativeTarget "Pods-ArgosPPTTests" */;
+			buildPhases = (
+				CB5C024FAC0A3C68AB4FA117181AE288 /* Headers */,
+				6557872FEC0D7B0D10A1D675DADB1D25 /* Sources */,
+				0CD1A336AEE167490CD8A7CB6B1EF7B3 /* Frameworks */,
+				6FFA50A7BCC943FFCAC01ADE2D6BB085 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13A326891F410179C999F0CDFD68408A /* PBXTargetDependency */,
+			);
+			name = "Pods-ArgosPPTTests";
+			productName = Pods_ArgosPPTTests;
+			productReference = 1F2B9487D219D7D5FBE3F3F522C05D8B /* Pods-ArgosPPTTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		AD5EDA541B0FCE6CF64A55832074C86C /* Pods-ArgosPPT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09A78382E8D4C404671E8CF533A6620F /* Build configuration list for PBXNativeTarget "Pods-ArgosPPT" */;
+			buildPhases = (
+				7A674F7C9C2FEF0BEF7D0363BF94E4F2 /* Headers */,
+				36828777CDF44698EBEF3457713DBB70 /* Sources */,
+				F5A9E3B97171F67973B9AD03B2C2A832 /* Frameworks */,
+				39FD83D214DA3BEBD46B0B0B4433C386 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61E6F46232808254585E5602F49F48AD /* PBXTargetDependency */,
+			);
+			name = "Pods-ArgosPPT";
+			productName = Pods_ArgosPPT;
+			productReference = A84C0C990503DE2E36548125C2F75EC3 /* Pods-ArgosPPT */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = F7ED3E2C6E6C5E276F1C186BB50746A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7C733A13669EC5B726DC417327938198 /* CaptureSDK */,
+				AD5EDA541B0FCE6CF64A55832074C86C /* Pods-ArgosPPT */,
+				7B1FA47A2A60A1ABB26A1297FBEBA914 /* Pods-ArgosPPT-ArgosPPTUITests */,
+				7D059B9E56917AA1FD908234AD6BC415 /* Pods-ArgosPPTTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0753AC00F6B68D1E100A793106B35755 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39FD83D214DA3BEBD46B0B0B4433C386 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FFA50A7BCC943FFCAC01ADE2D6BB085 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		62C3CDFE7CAE2C19B672D7E12E760DE0 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/CaptureSDK/CaptureSDK-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/CaptureSDK/CaptureSDK-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/CaptureSDK/CaptureSDK-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		36828777CDF44698EBEF3457713DBB70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DFF6CA6AFECF0A6909F4F4F44DB888F /* Pods-ArgosPPT-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6557872FEC0D7B0D10A1D675DADB1D25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59AE9911452260700ECCAF293116D33F /* Pods-ArgosPPTTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCD6CCEE72AC9F1AFE4DB2C4818DFC23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7080B2E22F888438A0E6111909D320A7 /* Pods-ArgosPPT-ArgosPPTUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13A326891F410179C999F0CDFD68408A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ArgosPPT";
+			target = AD5EDA541B0FCE6CF64A55832074C86C /* Pods-ArgosPPT */;
+			targetProxy = A31662DB967A699F773BB7CFB994EB02 /* PBXContainerItemProxy */;
+		};
+		61E6F46232808254585E5602F49F48AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CaptureSDK;
+			target = 7C733A13669EC5B726DC417327938198 /* CaptureSDK */;
+			targetProxy = 5FD6E6E00323267B9657536DCBDA4D9B /* PBXContainerItemProxy */;
+		};
+		C73A01287EC95D6BF19F00DCD399F567 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CaptureSDK;
+			target = 7C733A13669EC5B726DC417327938198 /* CaptureSDK */;
+			targetProxy = 75FAE6077ABD7F9A9A0690CD714BFC64 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0E1DFA6F2177AF17819764A0D91A45F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65111459516DA96048AA1793F7AE4EEE /* CaptureSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0FDFA4A59633642474647C51B64ED843 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92A1240C6D657CE715E97B96EFE6A6D4 /* Pods-ArgosPPT-ArgosPPTUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ArgosPPT-ArgosPPTUITests/Pods-ArgosPPT-ArgosPPTUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ArgosPPT-ArgosPPTUITests/Pods-ArgosPPT-ArgosPPTUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1124B462652A18CCB7344B2D1915EF8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2511B4F4D54F5DD1390E77E2F254841 /* Pods-ArgosPPT-ArgosPPTUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ArgosPPT-ArgosPPTUITests/Pods-ArgosPPT-ArgosPPTUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ArgosPPT-ArgosPPTUITests/Pods-ArgosPPT-ArgosPPTUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		213ABFAEF4F796CB2A10DEA838B9F0B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5B8A3F1381446665D55A502689A3050 /* Pods-ArgosPPT.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ArgosPPT/Pods-ArgosPPT-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ArgosPPT/Pods-ArgosPPT.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2C3FEC7CF51A0359117D1B8E078A61BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1D1435A7413BFD9423CBAD7ACC8FC82 /* Pods-ArgosPPTTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ArgosPPTTests/Pods-ArgosPPTTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ArgosPPTTests/Pods-ArgosPPTTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		49C39536A5F7E56E13160C1EC6CEBE7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43CCDB81A1A280824C94F0F72C7BCC29 /* Pods-ArgosPPTTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ArgosPPTTests/Pods-ArgosPPTTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ArgosPPTTests/Pods-ArgosPPTTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6A5C026ED62BBFE3380CD257EEFAEB20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		DA3A3F234CAF6D22B3E40513E150C248 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E091265BF84AEA2433511EBE135BEDF7 /* CaptureSDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E19515FA85A86658C7824E8758063D85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 226623F306303511DA82BFED6503A9BB /* Pods-ArgosPPT.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ArgosPPT/Pods-ArgosPPT-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ArgosPPT/Pods-ArgosPPT.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E873CA97BD124B21839AF13C9BE1CD18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09A78382E8D4C404671E8CF533A6620F /* Build configuration list for PBXNativeTarget "Pods-ArgosPPT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				213ABFAEF4F796CB2A10DEA838B9F0B2 /* Debug */,
+				E19515FA85A86658C7824E8758063D85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09ED043FB1238452EB32E4CAA6B96888 /* Build configuration list for PBXAggregateTarget "CaptureSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA3A3F234CAF6D22B3E40513E150C248 /* Debug */,
+				0E1DFA6F2177AF17819764A0D91A45F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		477119440FACEFFB3C6AEB484872A871 /* Build configuration list for PBXNativeTarget "Pods-ArgosPPT-ArgosPPTUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FDFA4A59633642474647C51B64ED843 /* Debug */,
+				1124B462652A18CCB7344B2D1915EF8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A5C026ED62BBFE3380CD257EEFAEB20 /* Debug */,
+				E873CA97BD124B21839AF13C9BE1CD18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CADCBC132DD8D0E951DABDA02056F791 /* Build configuration list for PBXNativeTarget "Pods-ArgosPPTTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49C39536A5F7E56E13160C1EC6CEBE7D /* Debug */,
+				2C3FEC7CF51A0359117D1B8E078A61BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

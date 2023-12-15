@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct CartProductView: View {
-    @EnvironmentObject var cartManager: CartManager
+    @ObservedObject var cartManager: CartManager
     var product: Product
+    
     var body: some View {
         HStack(spacing: 20){
             Image(product.image)
@@ -38,12 +39,11 @@ struct CartProductView: View {
         .padding(.horizontal)
         .background(Color("kSecondary"))
         .cornerRadius(12)
-        .frame(width: .infinity, alignment: .leading)
+        .frame(width: nil, alignment: .leading)
         .padding()
     }
 }
 
 #Preview {
-    CartProductView(product: productList[2])
-        .environmentObject(CartManager())
+    CartProductView(cartManager: CartManager(), product: productList[2])
 }

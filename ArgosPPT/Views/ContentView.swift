@@ -2,13 +2,14 @@
 //  ContentView.swift
 //  ArgosPPT
 //
-//  Created by Mo Abdo on 12/8/23.
+//  Created by Mo Abdo on 11/3/23.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     @StateObject var cartManager = CartManager()
+    @ObservedObject var captureHelperManager: CaptureHelperManager = .shared
     @State var currentTab: Tab = .Home
     
     init() {
@@ -20,7 +21,7 @@ struct ContentView: View {
     var body: some View {
         TabView(selection: $currentTab) {
             
-            HomePageView()
+            HomePageView(cartManager: cartManager)
             
             Text("Search View")
                 .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: .infinity)

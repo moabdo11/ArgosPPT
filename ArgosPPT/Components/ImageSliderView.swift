@@ -15,7 +15,7 @@ struct ImageSliderView: View {
             ZStack(alignment: .trailing){
                 Image(slides[currentIndex])
                     .resizable()
-                    .frame(width: .infinity, height: 180)
+                    .frame(width: nil, height: 180)
                     .scaledToFit()
                     .cornerRadius(15)
             }
@@ -30,7 +30,7 @@ struct ImageSliderView: View {
         }
         .padding()
         .onAppear{
-            Timer.scheduledTimer(withTimeInterval: 5, repeats: true){timer in
+            Timer.scheduledTimer(withTimeInterval: 3, repeats: true){timer in
                 if self.currentIndex + 1 == self.slides.count {
                     self.currentIndex = 0
                 }else{

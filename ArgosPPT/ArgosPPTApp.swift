@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct ArgosPPTApp: App {
+    @UIApplicationDelegateAdaptor private var appDelegate: AppDelegate
     var body: some Scene {
         WindowGroup {
             ContentView()

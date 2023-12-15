@@ -8,19 +8,23 @@
 import SwiftUI
 
 struct HomePageView: View {
-    @EnvironmentObject var cartManager: CartManager
+    @ObservedObject var cartManager: CartManager
+
+       init(cartManager: CartManager) {
+           self.cartManager = cartManager
+       }
     
     var body: some View {
         NavigationStack {
             ZStack(alignment: .top){
                 Color.white
                     .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                
+            ScrollView{
                 VStack{
-                    AppBar()
+                    AppBar(cartManager: cartManager)
                     
                     SearchView()
-                
+                    
                     ImageSliderView()
                     
                     HStack{
@@ -30,8 +34,12 @@ struct HomePageView: View {
                         
                         Spacer()
                         
-                        Image(systemName: "circle.grid.2x2.fill")
-                            .foregroundColor(Color("kPrimary"))
+                        NavigationLink(destination: {
+                            ProductsView(cartManager: cartManager)
+                        }, label: {
+                            Image(systemName: "circle.grid.2x2.fill")
+                                .foregroundColor(Color("kPrimary"))
+                        })
                     }
                     .padding()
                     
@@ -41,27 +49,26 @@ struct HomePageView: View {
                                 NavigationLink{
                                     ProductDetailsView(product: product)
                                 } label: {
-                                    ProductCardView(product: product)
+                                    ProductCardView(cartManager: cartManager, product: product)
                                         .environmentObject(cartManager)
                                 }
                             }
                         }
-                        .padding(.horizontal)
-                        
+                        .padding(.horizontal, 10)
                     }
+                    .padding(.bottom, 100)
                 }
+                
+            }
+               
             }
         }
     }
 }
 
-#Preview {
-    HomePageView()
-        .environmentObject(CartManager())
-}
-
 struct AppBar: View {
-    @EnvironmentObject var cartManager: CartManager
+    @ObservedObject var cartManager: CartManager
+    
     var body: some View {
         NavigationStack {
             VStack(alignment: .leading){
@@ -77,9 +84,7 @@ struct AppBar: View {
                     
                     Spacer()
                     
-                    NavigationLink(destination: CartView()
-                        .environmentObject(cartManager)
-                    ){
+                    NavigationLink(destination: CartView(cartManager: cartManager)){
                         CartButton(numberOfProducts: cartManager.products.count)
                     }
                 }
@@ -92,6 +97,10 @@ struct AppBar: View {
             }
         }
         .padding()
-        .environmentObject(CartManager())
     }
 }
+
+#Preview {
+    HomePageView(cartManager: CartManager())
+}
+

@@ -1,0 +1,6 @@
+framework module Pods_ArgosPPTTests {
+  umbrella header "Pods-ArgosPPTTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
