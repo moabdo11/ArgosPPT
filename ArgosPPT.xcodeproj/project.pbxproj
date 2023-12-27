@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B08572571095758C35481B9 /* Pods_ArgosPPT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647E1C23DA00FE5D8EB4BE88 /* Pods_ArgosPPT.framework */; };
+		616F8C342B35E34200355B04 /* NotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616F8C332B35E34200355B04 /* NotificationsManager.swift */; };
+		6174D2762B3C8F3B001978DF /* PaymentCardSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6174D2752B3C8F3B001978DF /* PaymentCardSelection.swift */; };
+		6174D2782B3C8FE4001978DF /* CardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6174D2772B3C8FE4001978DF /* CardManager.swift */; };
+		6174D27A2B3C90A0001978DF /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6174D2792B3C90A0001978DF /* Card.swift */; };
+		6174D27C2B3C9296001978DF /* CardSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6174D27B2B3C9296001978DF /* CardSelectionView.swift */; };
 		618178032B23EA700047E41A /* ArgosPPTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618178022B23EA700047E41A /* ArgosPPTApp.swift */; };
 		618178052B23EA700047E41A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618178042B23EA700047E41A /* ContentView.swift */; };
 		618178072B23EA710047E41A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 618178062B23EA710047E41A /* Assets.xcassets */; };
@@ -28,9 +32,13 @@
 		61B9D3BC2B28FA0800E54DF2 /* ProductDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B9D3BB2B28FA0800E54DF2 /* ProductDetailsView.swift */; };
 		61B9D3BE2B29065300E54DF2 /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B9D3BD2B29065300E54DF2 /* ProductsView.swift */; };
 		61C0D2F72B2B905A006311FD /* SocketMobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C0D2F62B2B905A006311FD /* SocketMobile.swift */; };
-		61C0D2FD2B2BA7B2006311FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C0D2FC2B2BA7B2006311FD /* AppDelegate.swift */; };
-		8EBA2682B597990F3A1FB8EB /* Pods_ArgosPPT_ArgosPPTUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71F3A47A08E6797A34B97FF8 /* Pods_ArgosPPT_ArgosPPTUITests.framework */; };
-		E757EE5F7D96933B36C5B345 /* Pods_ArgosPPTTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F0ED6A0467CE927C9AE4DE6 /* Pods_ArgosPPTTests.framework */; };
+		61C0D3012B2BE65C006311FD /* ReceiptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C0D3002B2BE65C006311FD /* ReceiptView.swift */; };
+		61C0D3052B2BE6D2006311FD /* DiscountSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C0D3042B2BE6D2006311FD /* DiscountSelection.swift */; };
+		61D623F22B315EFB000BF5D6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61D623F12B315EFB000BF5D6 /* GoogleService-Info.plist */; };
+		61E192432B3BF4DF00522AD4 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 61E192422B3BF4DF00522AD4 /* FirebaseMessaging */; };
+		82CA378432A540E8E1AAE007 /* Pods_ArgosPPT_ArgosPPTUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C887EDBA266E1CB0771B8C /* Pods_ArgosPPT_ArgosPPTUITests.framework */; };
+		A39A9BB7BE7D009792166B79 /* Pods_ArgosPPTTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08D707B71BE9802D379C6699 /* Pods_ArgosPPTTests.framework */; };
+		D26FB54369A3847BB6A71169 /* Pods_ArgosPPT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39EFCE4A2F6F5AE76301A332 /* Pods_ArgosPPT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,9 +59,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		23967BEF2E5D79CE73120177 /* Pods-ArgosPPT-ArgosPPTUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgosPPT-ArgosPPTUITests.release.xcconfig"; path = "Target Support Files/Pods-ArgosPPT-ArgosPPTUITests/Pods-ArgosPPT-ArgosPPTUITests.release.xcconfig"; sourceTree = "<group>"; };
-		327EE1D5615D0200F0BBDCEF /* Pods-ArgosPPTTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgosPPTTests.release.xcconfig"; path = "Target Support Files/Pods-ArgosPPTTests/Pods-ArgosPPTTests.release.xcconfig"; sourceTree = "<group>"; };
-		3EF318C515ED49A1AC9F117D /* Pods-ArgosPPTTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgosPPTTests.debug.xcconfig"; path = "Target Support Files/Pods-ArgosPPTTests/Pods-ArgosPPTTests.debug.xcconfig"; sourceTree = "<group>"; };
+		08D707B71BE9802D379C6699 /* Pods_ArgosPPTTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArgosPPTTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		10C887EDBA266E1CB0771B8C /* Pods_ArgosPPT_ArgosPPTUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArgosPPT_ArgosPPTUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		144758BBE2D3726318A8DED2 /* Pods-ArgosPPTTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgosPPTTests.release.xcconfig"; path = "Target Support Files/Pods-ArgosPPTTests/Pods-ArgosPPTTests.release.xcconfig"; sourceTree = "<group>"; };
+		2A78AE30CDE0F1E763EA112E /* Pods-ArgosPPTTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgosPPTTests.debug.xcconfig"; path = "Target Support Files/Pods-ArgosPPTTests/Pods-ArgosPPTTests.debug.xcconfig"; sourceTree = "<group>"; };
+		39EFCE4A2F6F5AE76301A332 /* Pods_ArgosPPT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArgosPPT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		616F8C332B35E34200355B04 /* NotificationsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsManager.swift; sourceTree = "<group>"; };
+		6174D2752B3C8F3B001978DF /* PaymentCardSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCardSelection.swift; sourceTree = "<group>"; };
+		6174D2772B3C8FE4001978DF /* CardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardManager.swift; sourceTree = "<group>"; };
+		6174D2792B3C90A0001978DF /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		6174D27B2B3C9296001978DF /* CardSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSelectionView.swift; sourceTree = "<group>"; };
 		618177FF2B23EA700047E41A /* ArgosPPT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArgosPPT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		618178022B23EA700047E41A /* ArgosPPTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgosPPTApp.swift; sourceTree = "<group>"; };
 		618178042B23EA700047E41A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,13 +93,14 @@
 		61B9D3BB2B28FA0800E54DF2 /* ProductDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsView.swift; sourceTree = "<group>"; };
 		61B9D3BD2B29065300E54DF2 /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
 		61C0D2F62B2B905A006311FD /* SocketMobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketMobile.swift; sourceTree = "<group>"; };
-		61C0D2FC2B2BA7B2006311FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		647E1C23DA00FE5D8EB4BE88 /* Pods_ArgosPPT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArgosPPT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F830085F2301ACFD3A0CBF7 /* Pods-ArgosPPT-ArgosPPTUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgosPPT-ArgosPPTUITests.debug.xcconfig"; path = "Target Support Files/Pods-ArgosPPT-ArgosPPTUITests/Pods-ArgosPPT-ArgosPPTUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		71F3A47A08E6797A34B97FF8 /* Pods_ArgosPPT_ArgosPPTUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArgosPPT_ArgosPPTUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F0ED6A0467CE927C9AE4DE6 /* Pods_ArgosPPTTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArgosPPTTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		962C2BC4D2F2EF09C89CE75B /* Pods-ArgosPPT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgosPPT.release.xcconfig"; path = "Target Support Files/Pods-ArgosPPT/Pods-ArgosPPT.release.xcconfig"; sourceTree = "<group>"; };
-		B9581E2949AEF8D4AF986979 /* Pods-ArgosPPT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgosPPT.debug.xcconfig"; path = "Target Support Files/Pods-ArgosPPT/Pods-ArgosPPT.debug.xcconfig"; sourceTree = "<group>"; };
+		61C0D3002B2BE65C006311FD /* ReceiptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptView.swift; sourceTree = "<group>"; };
+		61C0D3042B2BE6D2006311FD /* DiscountSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountSelection.swift; sourceTree = "<group>"; };
+		61D623EE2B313F14000BF5D6 /* ArgosPPT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ArgosPPT.entitlements; sourceTree = "<group>"; };
+		61D623F12B315EFB000BF5D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6C1A927B82E631020ECDB254 /* Pods-ArgosPPT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgosPPT.debug.xcconfig"; path = "Target Support Files/Pods-ArgosPPT/Pods-ArgosPPT.debug.xcconfig"; sourceTree = "<group>"; };
+		9D46CF9E064F68C21D9DEF63 /* Pods-ArgosPPT-ArgosPPTUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgosPPT-ArgosPPTUITests.release.xcconfig"; path = "Target Support Files/Pods-ArgosPPT-ArgosPPTUITests/Pods-ArgosPPT-ArgosPPTUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BFA721245B494F02EF5E6373 /* Pods-ArgosPPT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgosPPT.release.xcconfig"; path = "Target Support Files/Pods-ArgosPPT/Pods-ArgosPPT.release.xcconfig"; sourceTree = "<group>"; };
+		D6F1B8ACA532432D6E4873B9 /* Pods-ArgosPPT-ArgosPPTUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgosPPT-ArgosPPTUITests.debug.xcconfig"; path = "Target Support Files/Pods-ArgosPPT-ArgosPPTUITests/Pods-ArgosPPT-ArgosPPTUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +108,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B08572571095758C35481B9 /* Pods_ArgosPPT.framework in Frameworks */,
+				61E192432B3BF4DF00522AD4 /* FirebaseMessaging in Frameworks */,
+				D26FB54369A3847BB6A71169 /* Pods_ArgosPPT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,7 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E757EE5F7D96933B36C5B345 /* Pods_ArgosPPTTests.framework in Frameworks */,
+				A39A9BB7BE7D009792166B79 /* Pods_ArgosPPTTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,22 +125,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EBA2682B597990F3A1FB8EB /* Pods_ArgosPPT_ArgosPPTUITests.framework in Frameworks */,
+				82CA378432A540E8E1AAE007 /* Pods_ArgosPPT_ArgosPPTUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D90D8D99062219BCF78C630 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39EFCE4A2F6F5AE76301A332 /* Pods_ArgosPPT.framework */,
+				10C887EDBA266E1CB0771B8C /* Pods_ArgosPPT_ArgosPPTUITests.framework */,
+				08D707B71BE9802D379C6699 /* Pods_ArgosPPTTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		618177F62B23EA700047E41A = {
 			isa = PBXGroup;
 			children = (
+				61D623F12B315EFB000BF5D6 /* GoogleService-Info.plist */,
 				618178012B23EA700047E41A /* ArgosPPT */,
 				618178122B23EA710047E41A /* ArgosPPTTests */,
 				6181781C2B23EA710047E41A /* ArgosPPTUITests */,
 				618178002B23EA700047E41A /* Products */,
 				944BFF6F2F6652AD4020FBA9 /* Pods */,
-				E5504C824E06766CCA77A920 /* Frameworks */,
+				2D90D8D99062219BCF78C630 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +168,7 @@
 		618178012B23EA700047E41A /* ArgosPPT */ = {
 			isa = PBXGroup;
 			children = (
+				61D623EE2B313F14000BF5D6 /* ArgosPPT.entitlements */,
 				619DEE872B2B8D60003EEE40 /* Info.plist */,
 				6181782C2B23F81C0047E41A /* Models */,
 				61B9D3B22B27B3A100E54DF2 /* Views */,
@@ -148,8 +177,9 @@
 				618178062B23EA710047E41A /* Assets.xcassets */,
 				618178082B23EA710047E41A /* Preview Content */,
 				61B9D3AE2B2655F100E54DF2 /* CartManager.swift */,
+				6174D2772B3C8FE4001978DF /* CardManager.swift */,
 				61C0D2F62B2B905A006311FD /* SocketMobile.swift */,
-				61C0D2FC2B2BA7B2006311FD /* AppDelegate.swift */,
+				616F8C332B35E34200355B04 /* NotificationsManager.swift */,
 			);
 			path = ArgosPPT;
 			sourceTree = "<group>";
@@ -183,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				6181782D2B23F84A0047E41A /* Product.swift */,
+				6174D2792B3C90A0001978DF /* Card.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -196,6 +227,8 @@
 				61B9D3B02B27B2AE00E54DF2 /* CartButton.swift */,
 				61B9D3B52B27CDE700E54DF2 /* CartProductView.swift */,
 				61B9D3B92B27D49600E54DF2 /* PaymentButton.swift */,
+				61C0D3042B2BE6D2006311FD /* DiscountSelection.swift */,
+				6174D2752B3C8F3B001978DF /* PaymentCardSelection.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -208,6 +241,8 @@
 				61B9D3B72B27D17700E54DF2 /* CartView.swift */,
 				61B9D3BB2B28FA0800E54DF2 /* ProductDetailsView.swift */,
 				61B9D3BD2B29065300E54DF2 /* ProductsView.swift */,
+				61C0D3002B2BE65C006311FD /* ReceiptView.swift */,
+				6174D27B2B3C9296001978DF /* CardSelectionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -215,24 +250,14 @@
 		944BFF6F2F6652AD4020FBA9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B9581E2949AEF8D4AF986979 /* Pods-ArgosPPT.debug.xcconfig */,
-				962C2BC4D2F2EF09C89CE75B /* Pods-ArgosPPT.release.xcconfig */,
-				6F830085F2301ACFD3A0CBF7 /* Pods-ArgosPPT-ArgosPPTUITests.debug.xcconfig */,
-				23967BEF2E5D79CE73120177 /* Pods-ArgosPPT-ArgosPPTUITests.release.xcconfig */,
-				3EF318C515ED49A1AC9F117D /* Pods-ArgosPPTTests.debug.xcconfig */,
-				327EE1D5615D0200F0BBDCEF /* Pods-ArgosPPTTests.release.xcconfig */,
+				6C1A927B82E631020ECDB254 /* Pods-ArgosPPT.debug.xcconfig */,
+				BFA721245B494F02EF5E6373 /* Pods-ArgosPPT.release.xcconfig */,
+				D6F1B8ACA532432D6E4873B9 /* Pods-ArgosPPT-ArgosPPTUITests.debug.xcconfig */,
+				9D46CF9E064F68C21D9DEF63 /* Pods-ArgosPPT-ArgosPPTUITests.release.xcconfig */,
+				2A78AE30CDE0F1E763EA112E /* Pods-ArgosPPTTests.debug.xcconfig */,
+				144758BBE2D3726318A8DED2 /* Pods-ArgosPPTTests.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		E5504C824E06766CCA77A920 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				647E1C23DA00FE5D8EB4BE88 /* Pods_ArgosPPT.framework */,
-				71F3A47A08E6797A34B97FF8 /* Pods_ArgosPPT_ArgosPPTUITests.framework */,
-				7F0ED6A0467CE927C9AE4DE6 /* Pods_ArgosPPTTests.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,17 +267,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 618178232B23EA710047E41A /* Build configuration list for PBXNativeTarget "ArgosPPT" */;
 			buildPhases = (
-				DB7F72E14CE3CFF1D81937CC /* [CP] Check Pods Manifest.lock */,
+				C801D4047134C5857FB40F39 /* [CP] Check Pods Manifest.lock */,
 				618177FB2B23EA700047E41A /* Sources */,
 				618177FC2B23EA700047E41A /* Frameworks */,
 				618177FD2B23EA700047E41A /* Resources */,
-				EB6A9132470FD41F8F6ACE7A /* [CP] Embed Pods Frameworks */,
+				E0DC46FD0E2B6423ECBD0ADC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ArgosPPT;
+			packageProductDependencies = (
+				61E192422B3BF4DF00522AD4 /* FirebaseMessaging */,
+			);
 			productName = ArgosPPT;
 			productReference = 618177FF2B23EA700047E41A /* ArgosPPT.app */;
 			productType = "com.apple.product-type.application";
@@ -261,7 +289,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 618178262B23EA710047E41A /* Build configuration list for PBXNativeTarget "ArgosPPTTests" */;
 			buildPhases = (
-				A1A0BADEC0DB94920FF0D128 /* [CP] Check Pods Manifest.lock */,
+				1A9A561C9F3FF1E8F82F84E8 /* [CP] Check Pods Manifest.lock */,
 				6181780B2B23EA710047E41A /* Sources */,
 				6181780C2B23EA710047E41A /* Frameworks */,
 				6181780D2B23EA710047E41A /* Resources */,
@@ -280,11 +308,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 618178292B23EA710047E41A /* Build configuration list for PBXNativeTarget "ArgosPPTUITests" */;
 			buildPhases = (
-				183F265F7C0A8EAC83652832 /* [CP] Check Pods Manifest.lock */,
+				A527C06F89AE3CD4060B6DD5 /* [CP] Check Pods Manifest.lock */,
 				618178152B23EA710047E41A /* Sources */,
 				618178162B23EA710047E41A /* Frameworks */,
 				618178172B23EA710047E41A /* Resources */,
-				CDBF724EAA1DD3EA23873A99 /* [CP] Embed Pods Frameworks */,
+				9D7620913E08B567FC9F25D3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -328,6 +356,9 @@
 				Base,
 			);
 			mainGroup = 618177F62B23EA700047E41A;
+			packageReferences = (
+				61E192412B3BF4DF00522AD4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 618178002B23EA700047E41A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -345,6 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6181780A2B23EA710047E41A /* Preview Assets.xcassets in Resources */,
+				61D623F22B315EFB000BF5D6 /* GoogleService-Info.plist in Resources */,
 				618178072B23EA710047E41A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,29 +398,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		183F265F7C0A8EAC83652832 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ArgosPPT-ArgosPPTUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A1A0BADEC0DB94920FF0D128 /* [CP] Check Pods Manifest.lock */ = {
+		1A9A561C9F3FF1E8F82F84E8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -410,7 +420,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CDBF724EAA1DD3EA23873A99 /* [CP] Embed Pods Frameworks */ = {
+		9D7620913E08B567FC9F25D3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -427,7 +437,29 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ArgosPPT-ArgosPPTUITests/Pods-ArgosPPT-ArgosPPTUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DB7F72E14CE3CFF1D81937CC /* [CP] Check Pods Manifest.lock */ = {
+		A527C06F89AE3CD4060B6DD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ArgosPPT-ArgosPPTUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C801D4047134C5857FB40F39 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -449,7 +481,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EB6A9132470FD41F8F6ACE7A /* [CP] Embed Pods Frameworks */ = {
+		E0DC46FD0E2B6423ECBD0ADC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -474,17 +506,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				61B9D3BE2B29065300E54DF2 /* ProductsView.swift in Sources */,
+				61C0D3052B2BE6D2006311FD /* DiscountSelection.swift in Sources */,
 				61B9D3BA2B27D49600E54DF2 /* PaymentButton.swift in Sources */,
+				6174D2762B3C8F3B001978DF /* PaymentCardSelection.swift in Sources */,
 				618178052B23EA700047E41A /* ContentView.swift in Sources */,
 				61B9D3B12B27B2AE00E54DF2 /* CartButton.swift in Sources */,
 				618178312B23FF980047E41A /* ImageSliderView.swift in Sources */,
+				6174D27C2B3C9296001978DF /* CardSelectionView.swift in Sources */,
 				618178032B23EA700047E41A /* ArgosPPTApp.swift in Sources */,
+				61C0D3012B2BE65C006311FD /* ReceiptView.swift in Sources */,
 				6181782E2B23F84A0047E41A /* Product.swift in Sources */,
+				616F8C342B35E34200355B04 /* NotificationsManager.swift in Sources */,
 				61B9D3AF2B2655F100E54DF2 /* CartManager.swift in Sources */,
-				61C0D2FD2B2BA7B2006311FD /* AppDelegate.swift in Sources */,
 				61B9D3B82B27D17700E54DF2 /* CartView.swift in Sources */,
+				6174D2782B3C8FE4001978DF /* CardManager.swift in Sources */,
 				61B9D3B62B27CDE700E54DF2 /* CartProductView.swift in Sources */,
 				61C0D2F72B2B905A006311FD /* SocketMobile.swift in Sources */,
+				6174D27A2B3C90A0001978DF /* Card.swift in Sources */,
 				61B9D3AD2B252B3300E54DF2 /* SearchView.swift in Sources */,
 				61B9D3BC2B28FA0800E54DF2 /* ProductDetailsView.swift in Sources */,
 				61B9D3B42B27B3E700E54DF2 /* HomePageView.swift in Sources */,
@@ -585,6 +623,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALIDATE_PRODUCT = NO;
 			};
 			name = Debug;
 		};
@@ -640,16 +679,17 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				VALIDATE_PRODUCT = YES;
+				VALIDATE_PRODUCT = NO;
 			};
 			name = Release;
 		};
 		618178242B23EA710047E41A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B9581E2949AEF8D4AF986979 /* Pods-ArgosPPT.debug.xcconfig */;
+			baseConfigurationReference = 6C1A927B82E631020ECDB254 /* Pods-ArgosPPT.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ArgosPPT/ArgosPPT.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ArgosPPT/Preview Content\"";
@@ -678,10 +718,11 @@
 		};
 		618178252B23EA710047E41A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 962C2BC4D2F2EF09C89CE75B /* Pods-ArgosPPT.release.xcconfig */;
+			baseConfigurationReference = BFA721245B494F02EF5E6373 /* Pods-ArgosPPT.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ArgosPPT/ArgosPPT.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ArgosPPT/Preview Content\"";
@@ -710,7 +751,7 @@
 		};
 		618178272B23EA710047E41A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3EF318C515ED49A1AC9F117D /* Pods-ArgosPPTTests.debug.xcconfig */;
+			baseConfigurationReference = 2A78AE30CDE0F1E763EA112E /* Pods-ArgosPPTTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -725,13 +766,13 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArgosPPT.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ArgosPPT";
+				TEST_HOST = "";
 			};
 			name = Debug;
 		};
 		618178282B23EA710047E41A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 327EE1D5615D0200F0BBDCEF /* Pods-ArgosPPTTests.release.xcconfig */;
+			baseConfigurationReference = 144758BBE2D3726318A8DED2 /* Pods-ArgosPPTTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -746,13 +787,13 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArgosPPT.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ArgosPPT";
+				TEST_HOST = "";
 			};
 			name = Release;
 		};
 		6181782A2B23EA710047E41A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F830085F2301ACFD3A0CBF7 /* Pods-ArgosPPT-ArgosPPTUITests.debug.xcconfig */;
+			baseConfigurationReference = D6F1B8ACA532432D6E4873B9 /* Pods-ArgosPPT-ArgosPPTUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -771,7 +812,7 @@
 		};
 		6181782B2B23EA710047E41A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 23967BEF2E5D79CE73120177 /* Pods-ArgosPPT-ArgosPPTUITests.release.xcconfig */;
+			baseConfigurationReference = 9D46CF9E064F68C21D9DEF63 /* Pods-ArgosPPT-ArgosPPTUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -828,6 +869,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		61E192412B3BF4DF00522AD4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.19.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		61E192422B3BF4DF00522AD4 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61E192412B3BF4DF00522AD4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 618177F72B23EA700047E41A /* Project object */;
 }

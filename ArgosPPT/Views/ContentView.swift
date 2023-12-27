@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     @StateObject var cartManager = CartManager()
+    @StateObject var cardManager = CardManager()
     @ObservedObject var captureHelperManager: CaptureHelperManager = .shared
     @State var currentTab: Tab = .Home
     
@@ -21,7 +23,7 @@ struct ContentView: View {
     var body: some View {
         TabView(selection: $currentTab) {
             
-            HomePageView(cartManager: cartManager)
+            HomePageView(cartManager: cartManager).environmentObject(cardManager)
             
             Text("Search View")
                 .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: .infinity)
@@ -93,6 +95,7 @@ struct ContentView: View {
 #Preview {
     ContentView()
         .environmentObject(CartManager())
+        .environmentObject(CardManager())
 }
 
 enum Tab: String, CaseIterable{

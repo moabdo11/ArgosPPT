@@ -8,14 +8,22 @@
 import SwiftUI
 
 struct CartView: View {
+    @StateObject private var manager = NotificationsManager()
     @ObservedObject var cartManager: CartManager
+    @ObservedObject var cardManager: CardManager
+    @State private var isPaymentButtonTapped = false
     
-    init(cartManager: CartManager) {
+    init(cartManager: CartManager, cardManager: CardManager) {
             self.cartManager = cartManager
+            self.cardManager = cardManager
         }
+    
     
     var body: some View {
         ScrollView{
+            
+            CardSelectionView(cardManager: cardManager)
+            
             if cartManager.products.count > 0 {
                 ForEach(cartManager.products, id: \.id){product in
                     CartProductView(cartManager: cartManager, product: product)
@@ -28,20 +36,31 @@ struct CartView: View {
                 }
                 .padding()
                 
-                PaymentButton(action: {})
-                    .padding()
-            }else {
-                Text("Your cart is empty")
-            }
-        }
-        .navigationTitle(Text("My Cart"))
-        .padding(.top)
-    }
-}
+                // Use NavigationLink directly tied to the Payment Button action
+                              NavigationLink(
+                                  destination: ReceiptView(cartManager: cartManager,  merchantLogo: Image("your_logo_image"), currentDate: Date()),
+                                  isActive: $isPaymentButtonTapped,
+                                  label: {
+                                      EmptyView() // This empty view is used as a workaround for a known issue with NavigationLink
+                                  }
+                              )
+                              .hidden() // Hide the navigation link, as it's triggered by the Payment Button action
 
-struct CartView_Previews: PreviewProvider {
-    static var previews: some View {
-        let cartManager = CartManager()
-        CartView(cartManager: cartManager)
-    }
+                              PaymentButton(action: {
+                                  // Perform any necessary actions before navigating to Receipts View
+                                  isPaymentButtonTapped = true
+                              })
+                              .padding()
+                          } else {
+                              Text("Your cart is empty")
+                          }
+                      }
+                      .navigationTitle(Text("My Cart"))
+                      .padding(.top)
+                  }
+              }
+
+
+#Preview {
+    CartView(cartManager: CartManager(), cardManager: CardManager())
 }

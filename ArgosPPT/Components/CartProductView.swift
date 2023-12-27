@@ -16,8 +16,9 @@ struct CartProductView: View {
             Image(product.image)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 70)
-                .cornerRadius(9)
+                .frame(width: 100)
+                .padding(.all, 20)
+                .cornerRadius(12)
             
             VStack(alignment: .leading, spacing: 5){
                 Text(product.name)
@@ -36,11 +37,11 @@ struct CartProductView: View {
                     cartManager.removeFromCart(product: product)
                 }
         }
-        .padding(.horizontal)
+        .frame(maxWidth: .infinity, alignment: .center)
         .background(Color("kSecondary"))
-        .cornerRadius(12)
+        .cornerRadius(20)
         .frame(width: nil, alignment: .leading)
-        .padding()
+        .padding(.all, 10)
     }
 }
 

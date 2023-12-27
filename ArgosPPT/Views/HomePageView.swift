@@ -9,9 +9,11 @@ import SwiftUI
 
 struct HomePageView: View {
     @ObservedObject var cartManager: CartManager
+    @ObservedObject var cardManager: CardManager
 
        init(cartManager: CartManager) {
            self.cartManager = cartManager
+           self.cardManager = CardManager()
        }
     
     var body: some View {
@@ -21,7 +23,7 @@ struct HomePageView: View {
                     .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             ScrollView{
                 VStack{
-                    AppBar(cartManager: cartManager)
+                    AppBar(cartManager: cartManager, cardManager: cardManager)
                     
                     SearchView()
                     
@@ -68,6 +70,7 @@ struct HomePageView: View {
 
 struct AppBar: View {
     @ObservedObject var cartManager: CartManager
+    @ObservedObject var cardManager: CardManager
     
     var body: some View {
         NavigationStack {
@@ -84,7 +87,7 @@ struct AppBar: View {
                     
                     Spacer()
                     
-                    NavigationLink(destination: CartView(cartManager: cartManager)){
+                    NavigationLink(destination: CartView(cartManager: cartManager, cardManager: cardManager)){
                         CartButton(numberOfProducts: cartManager.products.count)
                     }
                 }
