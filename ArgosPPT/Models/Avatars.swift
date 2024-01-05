@@ -5,4 +5,6 @@
 //  Created by Mo Abdo on 1/4/24.
 //
 
-import Foundation
+import SwiftUI
+
+let avatars: [String] = ["1","2","3","4","5"]

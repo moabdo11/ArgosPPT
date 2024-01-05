@@ -10,6 +10,7 @@ import SwiftUI
 struct HomePageView: View {
     @ObservedObject var cartManager: CartManager
     @ObservedObject var cardManager: CardManager
+    @State private var isActive: Bool = false
 
        init(cartManager: CartManager) {
            self.cartManager = cartManager
@@ -17,89 +18,85 @@ struct HomePageView: View {
        }
     
     var body: some View {
+       
         NavigationStack {
-            ZStack(alignment: .top){
-                Color.white
-                    .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-            ScrollView{
-                VStack{
-                    AppBar(cartManager: cartManager, cardManager: cardManager)
-                    
-                    SearchView()
-                    
-                    ImageSliderView()
-                    
-                    HStack{
-                        Text("New Deals")
-                            .font(.title2)
-                            .fontWeight(.medium)
-                        
-                        Spacer()
-                        
-                        NavigationLink(destination: {
-                            ProductsView(cartManager: cartManager)
-                        }, label: {
-                            Image(systemName: "circle.grid.2x2.fill")
-                                .foregroundColor(Color("kPrimary"))
-                        })
-                    }
-                    .padding()
-                    
-                    ScrollView(.horizontal, showsIndicators: false){
-                        HStack(spacing: 10){
-                            ForEach(productList, id: \.id){product in
-                                NavigationLink{
-                                    ProductDetailsView(product: product)
-                                } label: {
-                                    ProductCardView(cartManager: cartManager, product: product)
-                                        .environmentObject(cartManager)
-                                }
-                            }
-                        }
-                        .padding(.horizontal, 10)
-                    }
-                    .padding(.bottom, 100)
+            ScrollView(.vertical, showsIndicators: false) { // Wrap the content in a vertical ScrollView
+            VStack(alignment: .leading) {
+                // MARK: - Top Bank Card Section
+                VStack {
+                    BankCardView(balance: "24,098")
+                        .zIndex(1)
+                    ShareCardView()
+                        .offset(y: -70)
                 }
+                .padding(.top, 50)
                 
-            }
-               
-            }
-        }
-    }
-}
-
-struct AppBar: View {
-    @ObservedObject var cartManager: CartManager
-    @ObservedObject var cardManager: CardManager
-    
-    var body: some View {
-        NavigationStack {
-            VStack(alignment: .leading){
-                HStack{
-                    Image(systemName: "location.north.fill")
-                        .resizable()
-                        .frame(width: 20, height: 20)
-                        .padding(.trailing)
-                    
-                    Text("Boston, MA")
-                        .font(.title2)
-                        .foregroundColor(.gray)
-                    
+                // MARK: - Middle Section
+                Text("Amount")
+                    .font(.title3)
+                    .fontWeight(.bold)
+                    .padding(.horizontal, 30)
+                    .padding(.bottom, 5)
+                
+                HStack {
+                    Text("500.00 USD")
+                        .font(.system(size: 25))
+                        .fontWeight(.bold)
                     Spacer()
-                    
-                    NavigationLink(destination: CartView(cartManager: cartManager, cardManager: cardManager)){
-                        CartButton(numberOfProducts: cartManager.products.count)
+                    Image(systemName: "arrow.forward")
+                        .padding(.vertical)
+                        .padding(.horizontal, 40)
+                        .background(Color("kSecondary"))
+                        .cornerRadius(10)
+                }
+                .padding(.horizontal, 30)
+                
+                Divider()
+                    .padding(.horizontal, 30)
+                    .padding(.bottom)
+                
+                HStack {
+                    Text("Transaction")
+                        .font(.title3)
+                        .fontWeight(.bold)
+                    Spacer()
+                    Text("View all")
+                        .font(.footnote)
+                        .foregroundColor(.gray)
+                }
+                .padding(.horizontal, 30)
+                
+                // MARK: - Transactions List
+                ScrollView(.horizontal, showsIndicators: false) {
+                    LazyHStack(spacing: 10) {
+                        ForEach(1...6, id: \.self) { value in
+                            TransactionItemView()
+                        }
                     }
                 }
-                Text("Find the best deals")
-                    .font(.largeTitle .bold())
-                
-                Text("Rewards")
-                    .font(.largeTitle .bold())
-                    .foregroundColor(Color("kPrimary"))
+                .padding(.horizontal, 30)
             }
+            }
+            .toolbar {
+                ToolbarItemGroup(placement: .navigationBarLeading) {
+                    Text("Hello")
+                        .font(.system(size: 30))
+                        .fontWeight(.light)
+                    Text("John")
+                        .font(.system(size: 30))
+                        .fontWeight(.bold)
+                }
+                
+                ToolbarItemGroup(placement: .navigationBarTrailing) {
+                    Image(systemName: "bell.badge")
+                        .foregroundStyle(Color.red, Color.black)
+                    CircularImageView(image: "1", size: 50)
+                        .padding(.leading)
+                }
+            }
+            .frame(maxHeight: .infinity, alignment: .top)
+            .preferredColorScheme(.light)
         }
-        .padding()
     }
 }
 

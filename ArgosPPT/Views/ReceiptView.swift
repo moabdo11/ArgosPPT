@@ -76,6 +76,7 @@ struct ReceiptView: View {
             }
             
             Spacer()
+                .preferredColorScheme(.light)
         }
     }
 }

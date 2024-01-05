@@ -12,36 +12,38 @@ struct CartProductView: View {
     var product: Product
     
     var body: some View {
-        HStack(spacing: 20){
-            Image(product.image)
+        HStack(alignment:.center){
+            Image(product.cartImage)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 100)
                 .padding(.all, 20)
-                .cornerRadius(12)
-            
-            VStack(alignment: .leading, spacing: 5){
-                Text(product.name)
-                    .bold()
                 
+            
+            VStack(alignment: .leading){
+                Text(product.name)
+                    .font(.system(size: 26, weight: .bold, design: .default))
+                                       .foregroundColor(.white)
+                Text(product.category)
+                    .font(.system(size: 16, weight: .bold, design: .default))
+                                        .foregroundColor(.gray)
                 Text("$ \(product.price)")
-                    .bold()
-            }
-            .padding()
-            
+                    .font(.system(size: 16, weight: .bold, design: .default))
+                                            .foregroundColor(.white)
+                                            .padding(.top, 8)
+            }.padding(.trailing, 20)
             Spacer()
-            
             Image(systemName: "trash")
                 .foregroundColor(.red)
+                .padding(.trailing, 20)
                 .onTapGesture {
                     cartManager.removeFromCart(product: product)
                 }
         }
         .frame(maxWidth: .infinity, alignment: .center)
-        .background(Color("kSecondary"))
-        .cornerRadius(20)
-        .frame(width: nil, alignment: .leading)
-        .padding(.all, 10)
+              .background(Color(red: 32/255, green: 36/255, blue: 38/255))
+              .modifier(CardModifier())
+              .padding(.all, 10)
     }
 }
 

@@ -24,6 +24,9 @@ struct CartView: View {
             
             CardSelectionView(cardManager: cardManager)
             
+            Text("Your cart")
+                .bold()
+            
             if cartManager.products.count > 0 {
                 ForEach(cartManager.products, id: \.id){product in
                     CartProductView(cartManager: cartManager, product: product)
@@ -57,6 +60,7 @@ struct CartView: View {
                       }
                       .navigationTitle(Text("My Cart"))
                       .padding(.top)
+                      .preferredColorScheme(.light)
                   }
               }
 

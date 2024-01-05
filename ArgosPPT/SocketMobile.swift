@@ -14,9 +14,13 @@ class CaptureHelperManager: ObservableObject {
     static let shared = CaptureHelperManager()
     
     @Published var captureHelper: CaptureHelper
+    let cartManager: CartManager
+        let cardManager: CardManager
     
     private init() {
         self.captureHelper = CaptureHelper.sharedInstance
+        self.cartManager = CartManager()  // Replace with your actual initialization
+        self.cardManager = CardManager()
         setupCapture()
     }
     
@@ -28,7 +32,7 @@ class CaptureHelperManager: ObservableObject {
         
         captureHelper.dispatchQueue = DispatchQueue.main
         captureHelper.pushDelegate(DevicePresenceDelegate())
-        captureHelper.pushDelegate(DeviceDecodedDataDelegate())
+        captureHelper.pushDelegate(DeviceDecodedDataDelegate(cartManager: cartManager, cardManager: cardManager))
         captureHelper.openWithAppInfo(appInfo) { result in
             if result == SKTResult.E_NOERROR {
                 // Handle success
@@ -49,22 +53,35 @@ class CaptureHelperManager: ObservableObject {
     }
     
     private class DeviceDecodedDataDelegate: CaptureHelperDeviceDecodedDataDelegate {
+        let cartManager: CartManager
+           let cardManager: CardManager
+
+           init(cartManager: CartManager, cardManager: CardManager) {
+               self.cartManager = cartManager
+               self.cardManager = cardManager
+           }
+
+        
         func didReceiveDecodedData(_ decodedData: SKTCaptureDecodedData?, fromDevice device: CaptureHelperDevice, withResult result: SKTResult) {
             if let data = decodedData?.stringFromDecodedData() {
                 print("Decoded data: \(data)")
-                sendPushNotification(barcodeData: data)
+                sendPushNotification(barcodeData: data, cartManager: cartManager, cardManager: cardManager)
             }
         }
         
-        func sendPushNotification(barcodeData: String) {
+        func sendPushNotification(barcodeData: String, cartManager: CartManager, cardManager: CardManager) {
             // Send push notification using Firebase Cloud Messaging
             // Construct your notification payload
             let payload: [String: Any] = [
                 "to": "c4uWZtF_K0I-gOmlJWJ5Qq:APA91bFG-HZc9SKvchSVhtZ424Fc_hjQLcHTGiE75gORYUqxpSFtRgWBfWhaMhomV9O4w3HFMukkZEGcA3cVBTMhjIHQH-CYhS5DdrPqdDvmoZXcBKibNnjn_udFuVsl4nDRGGT-BqJs",
                 "notification": [
-                    "title": "Barcode Scanned",
-                    "body": "Barcode: \(barcodeData)"
-                ]
+                    "title": "Target",
+                    "body": "This an ArgosPPT Request, please finish processing your transaction"
+                ],
+                "data": [
+                           "urlScheme": "myapp",
+                           "urlHost": "cart"
+                       ]
             ]
             
             // Convert payload to JSON
@@ -86,8 +103,11 @@ class CaptureHelperManager: ObservableObject {
                     let responseString = String(data: data, encoding: .utf8)
                     print("Push notification sent successfully. Response: \(responseString ?? "")")
                 }
+                // Navigate to CartView after sending push notification on the main thread
+                        DispatchQueue.main.async {
+                            NavigationManager.shared.navigateToCartView(cartManager: cartManager, cardManager: cardManager)
+                        }
             }
-            
             task.resume()
         }
     }

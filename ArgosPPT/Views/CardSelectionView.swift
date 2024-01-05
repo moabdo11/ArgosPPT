@@ -21,6 +21,7 @@ struct CardSelectionView: View {
     var body: some View {
         VStack (spacing: 30){
             Text("Please Select Payment option")
+                .bold()
             ScrollView {
                 ForEach(cardList, id: \.id){card in
                     PaymentCardSelection(

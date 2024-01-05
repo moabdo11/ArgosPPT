@@ -9,10 +9,33 @@ import SwiftUI
 
 struct TransactionItemView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            VStack {
+                Image(systemName: "takeoutbag.and.cup.and.straw.fill")
+                    .foregroundColor(.white)
+                    .padding(.all, 5)
+                    .background(.pink)
+                    .cornerRadius(10)
+                
+                Text("Fast Food")
+                    .font(.title3)
+                    .fontWeight(.bold)
+                
+                Text("$450.00")
+            }
+            .padding(.all, 25)
+        }
+        .cornerRadius(20)
+        .overlay {
+            RoundedRectangle(cornerRadius: 20)
+                .stroke(.gray, lineWidth: 1)
+        }
     }
 }
 
-#Preview {
-    TransactionItemView()
+struct TransactionItemView_Previews: PreviewProvider {
+    static var previews: some View {
+        TransactionItemView()
+            .previewLayout(.sizeThatFits)
+    }
 }

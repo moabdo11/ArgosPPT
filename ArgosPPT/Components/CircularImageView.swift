@@ -7,12 +7,23 @@
 
 import SwiftUI
 
-struct SwiftUIView: View {
+struct CircularImageView: View {
+    let image: String
+    let size: CGFloat
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Image(image)
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .frame(width: size, height: size)
+            .clipShape(Circle())
     }
 }
 
-#Preview {
-    SwiftUIView()
+struct CircularImageView_Previews: PreviewProvider {
+    static var previews: some View {
+        CircularImageView(image: "1", size: 50)
+            .previewLayout(.sizeThatFits)
+    }
 }
+

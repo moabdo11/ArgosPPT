@@ -123,6 +123,7 @@ struct ProductDetailsView: View {
             }
         }
         .ignoresSafeArea(edges: .top)
+        .preferredColorScheme(.light)
     }
 }
 

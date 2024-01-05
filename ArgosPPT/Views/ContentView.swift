@@ -13,6 +13,7 @@ struct ContentView: View {
     @StateObject var cardManager = CardManager()
     @ObservedObject var captureHelperManager: CaptureHelperManager = .shared
     @State var currentTab: Tab = .Home
+    @State private var showTabView = true
     
     init() {
         UITabBar.appearance().isHidden = true
@@ -21,6 +22,7 @@ struct ContentView: View {
     @Namespace var animation
     
     var body: some View {
+        
         TabView(selection: $currentTab) {
             
             HomePageView(cartManager: cartManager).environmentObject(cardManager)
@@ -54,8 +56,35 @@ struct ContentView: View {
             ,
             alignment: .bottom
         ).ignoresSafeArea(.all, edges: .bottom)
-        
+            .onAppear {
+                        // Subscribe to push notification event
+                        NotificationCenter.default.addObserver(forName: Notification.Name("PushNotificationReceived"), object: nil, queue: .main) { _ in
+                            // Handle push notification received event
+                            handlePushNotification()
+                        }
+                    }
     }
+    
+    
+    func handlePushNotification() {
+        // Determine the tab you want to navigate to (e.g., .Cart)
+        let tabToNavigate: Tab = .Cart
+
+        // Switch to the desired tab
+        withAnimation(.spring()) {
+            currentTab = tabToNavigate
+        }
+        // Additionally, you can programmatically navigate to the CartView
+                // based on the selected tab
+                switch tabToNavigate {
+                case .Cart:
+                    NavigationManager.shared.navigateToCartView(cartManager: cartManager, cardManager: cardManager)
+                default:
+                    break // Handle other tabs if needed
+                }
+    }
+    
+
     
     func TabButton(tab: Tab) -> some View {
         GeometryReader{proxy in

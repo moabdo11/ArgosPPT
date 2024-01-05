@@ -26,6 +26,7 @@ struct ProductsView: View {
                 .padding()
             }
             .navigationTitle(Text("All your deals"))
+            .preferredColorScheme(.light)
         }
     }
 }
